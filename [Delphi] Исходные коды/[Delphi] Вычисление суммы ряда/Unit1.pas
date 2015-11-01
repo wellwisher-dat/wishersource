@@ -1,6 +1,6 @@
 {
-     Ñîñòàâèòü ïðîãðàììó ðåøåíèÿ ñëåäóþùåé çàäà÷è:
-     E - ñóììà ïðè n = 0 äî áåñêîíå÷íîñòè
+     Ð¡Ð¾ÑÑ‚Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñƒ Ñ€ÐµÑˆÐµÐ½Ð¸Ñ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¹ Ð·Ð°Ð´Ð°Ñ‡Ð¸:
+     E - ÑÑƒÐ¼Ð¼Ð° Ð¿Ñ€Ð¸ n = 0 Ð´Ð¾ Ð±ÐµÑÐºÐ¾Ð½ÐµÑ‡Ð½Ð¾ÑÑ‚Ð¸
      e - exp
      xn = 0.1
      xk = 1
@@ -82,7 +82,7 @@ repeat
 
   h:=(xk-xn)/M;
   y:=(Exp(x) + Exp(-x))/2;
-  mmo1.Lines.Add('ïðè x = '+FloatToStrF(x,ffFixed,6,2)+' ñóììà = '+FloatToStrF(s,ffFixed,8,4)+' y = '+FloatToStrF(s,ffFixed,8,4)+' N = '+IntToStr(n));
+  mmo1.Lines.Add('Ð¿Ñ€Ð¸ x = '+FloatToStrF(x,ffFixed,6,2)+' ÑÑƒÐ¼Ð¼Ð° = '+FloatToStrF(s,ffFixed,8,4)+' y = '+FloatToStrF(s,ffFixed,8,4)+' N = '+IntToStr(n));
   x:=x+h;
   until x>(xk+h/2)
 
