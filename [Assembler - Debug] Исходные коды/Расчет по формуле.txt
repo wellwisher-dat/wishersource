@@ -1,0 +1,19 @@
+;F = (12 + 9638) / Õ * (Y - 3698)
+
+mov cx,12
+mov bx,9638
+add cx,bx ; cx = 12+9638 !
+mov ax,3698
+mov bx,2222
+sub ax,bx ;    
+mov bx,ax ;  bx = 3698-2222 ! 
+mov ax,0
+mov ax,3 
+imul bx   ;  ax = 3 * (3698-2222) !
+mov si,cx
+mov cx,0
+mov cx,ax
+mov ax,0
+mov ax,si
+idiv cx ; dx:ax = F
+mov [204],al
